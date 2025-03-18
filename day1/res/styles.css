@@ -17,8 +17,8 @@ body{
 }
 .box ul{
     display: flex;
-    gap: 10px;
-    padding-bottom: 8px;
+    gap: 12px;
+    padding: 8px 16px;
 }
 
 .box li{
@@ -36,4 +36,7 @@ body{
 }
 .steps{
     font-size: 1.6rem;
+}
+footer{
+    padding-bottom: 60px;
 }
