@@ -16,11 +16,6 @@ body{
     background-color: #b8aec9;
     border: 1px solid #000;
 }
-.col{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.col .item{
-    padding: 20px 140px;
+.edges{
+    flex: 2 1;
 }
