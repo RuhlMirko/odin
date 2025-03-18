@@ -1,0 +1,39 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background: #e2dcc7;
+    margin-left: 16px;
+}
+.box{
+    border: 1px solid black;
+    background-color: #f3f0e4;
+    border-radius: 20px;
+}
+.box ul{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 8px;
+}
+
+.box li{
+    list-style-type:none;
+}
+
+.ingredients{
+    padding: 10px 30px;
+    background-color: #f3f0e4;
+    margin: 10px;
+}
+
+.ingredients li{
+    font-size: 1rem;
+}
+.steps{
+    font-size: 1.6rem;
+}
