@@ -66,7 +66,7 @@ button{
     color: #F9FAF8;
     padding: 8px 30px;
     border: 0 solid;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: 700;    
 }
 #main img{
@@ -113,4 +113,18 @@ button{
 }
 #quote h2{
     text-align: end;
+}
+#call{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882f6;
+    margin: 60px 8%;
+    color: #F9FAF8;
+    padding: 40px;
+    border-radius: 10px;
+}
+#call button{
+    border: 2px solid #E5E7EB;
+    padding: 5px 20px;
 }
