@@ -48,15 +48,17 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+}
+#main .container{
     height: 50vh;
 }
-.item{
+#main .item{
     flex: 1;
     font-size: 1.5rem;
     padding: 8px;
 }
-p{
+#main p{
     padding: 8px 0px;
 }
 button{
@@ -67,6 +69,34 @@ button{
     border-radius: 10px;
     font-weight: 700;    
 }
-img{
+#main img{
     width: 40vh;
+}
+
+#info{
+    margin-top: 20px;    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info img{
+    border-radius: 20px;
+    border: 2px solid #3882f6;
+    padding: 60px;
+}
+
+#info .container{
+    display: flex;
+    margin: 60px;
+    gap: 20px;
+}
+
+#info p{
+    width: 120px;
+    text-align:center;    
+    font-size: 0.8rem;
+    color: #4d4d4d;
 }
