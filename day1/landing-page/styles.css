@@ -100,3 +100,17 @@ button{
     font-size: 0.8rem;
     color: #4d4d4d;
 }
+
+#quote{
+    background-color: #e5e7eb;
+    padding: 60px 10%;
+}
+#quote span{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+}
+#quote h2{
+    text-align: end;
+}
