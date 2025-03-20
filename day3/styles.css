@@ -25,3 +25,8 @@ body div {
 button {
     padding: 10px;
 }
+
+footer {
+    color: #e5e7eb;
+    font-size: 2rem;
+}
