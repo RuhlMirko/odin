@@ -8,4 +8,7 @@ body {
 #table {
     display: flex;
     justify-content: space-around;
+    border: 2px solid #eec644;
+    border-radius: 5px;
+    padding: 0 0 40px;
 }
