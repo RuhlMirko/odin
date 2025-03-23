@@ -74,9 +74,15 @@ const checkRound = function (userInput) {
 }
 
 const checkWinner = function () {
+    const allBtns = document.querySelectorAll('button')
+    allBtns.forEach((btn) => {
+        btn.disabled = true
+    }
+    )
     if (score >= 3) {
         cpuDisplay.textContent = 'Player wins!'
     } else {
         cpuDisplay.textContent = 'CPU wins!'
     }
 }
+
