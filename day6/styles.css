@@ -8,17 +8,18 @@ body {
 #table {
     border: 2px solid #eec644;
     border-radius: 5px;
-    padding: 0 0 40px;
+    padding: 5px;
 }
 
 .row {
     display: flex;
+
 }
 
 .square {
-    margin: 6px;
+    margin: 1px;
     background-color: #eec644;
-    height: 50px;
-    width: 60px;
+    flex: 1;
+    height: 3rem;
     transition: 0.5s;
 }
