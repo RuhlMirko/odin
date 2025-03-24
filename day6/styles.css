@@ -17,9 +17,20 @@ body {
 }
 
 .square {
-    margin: 1px;
     background-color: #eec644;
     flex: 1;
     height: 3rem;
     transition: 0.5s;
+    border: 1px solid #00000015;
+}
+
+button {
+    color: inherit;
+    margin: inherit;
+    padding: 12px 48px;
+    background-color: inherit;
+    border: 2px solid #eec644;
+    font-weight: 900;
+    font-size: 2rem;
+    border-radius: 5px;
 }
