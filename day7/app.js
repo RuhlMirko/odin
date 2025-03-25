@@ -1,5 +1,6 @@
 'use strict'
-/*
+const section = document.querySelector('div')
+/* Exercise 1
 
 const cat = {
     name: 'Bertie',
@@ -25,6 +26,7 @@ para2.textContent = `The cat's color is ${cat.color}.`;
 section.appendChild(para1);
 section.appendChild(para2);
 */
+/* Exercise 2
 const band = {
     name: 'Soda Stereo',
     nationality: 'Argentina',
@@ -61,7 +63,7 @@ const band = {
 let bandInfo;
 
 // Put your code here
-const section = document.querySelector('div')
+
 bandInfo = `${band.name} was a popular latin-american ${band.genre} band founded in ${band.nationality} ${band.formed}-${band.split}, and their most listened albums were `
 
 for (let i in band.albums) {
@@ -73,3 +75,26 @@ for (let i in band.albums) {
 let para1 = document.createElement('p');
 para1.textContent = bandInfo;
 section.appendChild(para1);
+*/
+
+const cat = {
+    name: 'Bertie',
+    breed: 'Cymric',
+    color: 'white',
+    greeting: function () {
+        console.log('Meow!');
+    }
+}
+
+const cat2 = {
+    name: 'Bernie',
+    breed: 'Maine',
+    color: 'brown',
+    greeting: function () {
+        console.log(`Hello, said ${cat.name} the ${cat.breed}`);
+    }
+}
+
+
+cat.greeting()
+cat2.greeting()
