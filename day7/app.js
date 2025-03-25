@@ -99,7 +99,7 @@ const cat2 = {
 cat.greeting()
 cat2.greeting()
 */
-
+/* Exercise 4
 function Cat(name, breed, color) {
     this.name = name
     this.breed = breed
@@ -115,3 +115,13 @@ const cat2 = new Cat('Elfie', 'Aphrodite Giant', 'ginger')
 
 cat1.greeting();
 cat2.greeting();
+*/
+
+// Array methods exercises
+const camelize = function (str) {
+    const splited = str.split('-')
+    splited[1]
+    return
+}
+
+console.log(camelize('background-color'))
