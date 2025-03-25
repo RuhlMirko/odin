@@ -119,9 +119,21 @@ cat2.greeting();
 
 // Array methods exercises
 const camelize = function (str) {
+    const newString = []
     const splited = str.split('-')
-    splited[1]
-    return
+    for (let index in splited) {
+        if (index != 0) {
+            var cameled = splited[index].slice(0, 1).toUpperCase()
+            cameled = cameled + splited[index].slice(1)
+            newString.push(cameled)
+        }
+        else {
+            newString.push(splited[0])
+        }
+    }
+    return newString.join('')
 }
 
 console.log(camelize('background-color'))
+console.log(camelize('list-style-image'))
+console.log(camelize('-webkit-transition'))
