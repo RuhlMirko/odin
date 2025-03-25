@@ -31,7 +31,6 @@ userBtn.addEventListener('click', function () {
     width = height = Number(prompt('Enter the desired width'))
     container.removeChild(pixelFrame)
     createSketch()
-    console.log(container, width, height);
 })
 
 createSketch()
