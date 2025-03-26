@@ -139,10 +139,6 @@ console.log(camelize('list-style-image'))
 console.log(camelize('-webkit-transition'))
 */
 
-/**
-* @param {Array, minValue, maxValue}
-* @return {Array}
-*/
 /* Array exercise 2
 const filterRange = function (arr, minValue, maxValue) {
     const newArr = []
@@ -160,17 +156,20 @@ alert(filtered)
 alert(arr)
 */
 
-/* Array exercise 3
-const filterRangeInPlace = function (arr, minValue, maxValue) {
-    const newArr = []
-    for (let item of arr) {
-        if (item >= minValue && item <= maxValue) {
-            newArr.push(item)
+// Array exercise 3
+function filterRangeInPlace(arr, minValue, maxValue) {
+    for (let [index, item] of arr.entries()) {
+        if (item < minValue || item > maxValue) {
+            arr.splice(index, 1);
         }
     }
-    return newArr
 }
 
+
 let arr = [5, 3, 8, 1]
-console.log(filterRangeInPlace(arr, 1, 4))
-*/
+filterRangeInPlace(arr, 1, 4)
+console.log(arr);
+
+//*/
+
+
