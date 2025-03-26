@@ -143,6 +143,7 @@ console.log(camelize('-webkit-transition'))
 * @param {Array, minValue, maxValue}
 * @return {Array}
 */
+/* Array exercise 2
 const filterRange = function (arr, minValue, maxValue) {
     const newArr = []
     for (let item of arr) {
@@ -157,5 +158,19 @@ let arr = [5, 3, 8, 1]
 let filtered = filterRange(arr, 1, 4)
 alert(filtered)
 alert(arr)
+*/
 
+/* Array exercise 3
+const filterRangeInPlace = function (arr, minValue, maxValue) {
+    const newArr = []
+    for (let item of arr) {
+        if (item >= minValue && item <= maxValue) {
+            newArr.push(item)
+        }
+    }
+    return newArr
+}
 
+let arr = [5, 3, 8, 1]
+console.log(filterRangeInPlace(arr, 1, 4))
+*/
