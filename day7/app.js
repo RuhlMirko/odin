@@ -138,7 +138,6 @@ console.log(camelize('background-color'))
 console.log(camelize('list-style-image'))
 console.log(camelize('-webkit-transition'))
 */
-
 /* Array exercise 2
 const filterRange = function (arr, minValue, maxValue) {
     const newArr = []
@@ -155,8 +154,7 @@ let filtered = filterRange(arr, 1, 4)
 alert(filtered)
 alert(arr)
 */
-
-// Array exercise 3
+/* Array exercise 3
 function filterRangeInPlace(arr, minValue, maxValue) {
     for (let [index, item] of arr.entries()) {
         if (item < minValue || item > maxValue) {
@@ -169,7 +167,18 @@ function filterRangeInPlace(arr, minValue, maxValue) {
 let arr = [5, 3, 8, 1]
 filterRangeInPlace(arr, 1, 4)
 console.log(arr);
-
 //*/
+
+//
+
+const copySorted = function (arr) {
+    const newArr = arr.slice().sort()
+    return newArr
+}
+
+let arr = ['HTML', 'JavaScript', 'CSS']
+let sorted = copySorted(arr)
+
+console.log(sorted, arr);
 
 
