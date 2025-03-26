@@ -117,7 +117,7 @@ cat1.greeting();
 cat2.greeting();
 */
 
-// Array methods exercises
+/* Array methods exercises
 const camelize = function (str) {
     const newString = []
     const splited = str.split('-')
@@ -137,3 +137,25 @@ const camelize = function (str) {
 console.log(camelize('background-color'))
 console.log(camelize('list-style-image'))
 console.log(camelize('-webkit-transition'))
+*/
+
+/**
+* @param {Array, minValue, maxValue}
+* @return {Array}
+*/
+const filterRange = function (arr, minValue, maxValue) {
+    const newArr = []
+    for (let item of arr) {
+        if (item >= minValue && item <= maxValue) {
+            newArr.push(item)
+        }
+    }
+    return newArr
+}
+
+let arr = [5, 3, 8, 1]
+let filtered = filterRange(arr, 1, 4)
+alert(filtered)
+alert(arr)
+
+
