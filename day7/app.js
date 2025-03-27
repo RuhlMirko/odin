@@ -1,5 +1,5 @@
-'use strict'
-const section = document.querySelector('div')
+"use strict";
+const section = document.querySelector("div");
 /* Exercise 1
 
 const cat = {
@@ -169,8 +169,7 @@ filterRangeInPlace(arr, 1, 4)
 console.log(arr);
 //*/
 
-//
-
+/* Array exercise 4
 const copySorted = function (arr) {
     const newArr = arr.slice().sort()
     return newArr
@@ -178,7 +177,33 @@ const copySorted = function (arr) {
 
 let arr = ['HTML', 'JavaScript', 'CSS']
 let sorted = copySorted(arr)
-
 console.log(sorted, arr);
+//*/
+/* Extendable Calculator
+function Calculator() {
+    this.newOperation = []
 
+    this.calculate = function (str) {
+        let splited = str.split(' ')
+        return this.newOperation[splited[1]](splited[0], splited[2])
+    }
 
+    this.addMethod = function (operator, fn) {
+        this.newOperation[operator] = fn
+    }
+}
+
+// part 1
+let calc = new Calculator
+
+// part 2
+let powerCalc = new Calculator;
+powerCalc.addMethod("+", (a, b) => a + b);
+powerCalc.addMethod("-", (a, b) => a - b);
+powerCalc.addMethod("*", (a, b) => a * b);
+powerCalc.addMethod("/", (a, b) => a / b);
+powerCalc.addMethod("**", (a, b) => a ** b);
+
+let result = powerCalc.calculate("2 ** 3");
+console.log(result);; // 8
+*/
