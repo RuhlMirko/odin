@@ -1,22 +1,30 @@
 "use strict";
-const add = function () {};
+const diplay = "";
 
-const subtract = function () {};
+const add = function (a, b) {
+  return a + b;
+};
 
-const sum = function () {};
+const subtract = function (a, b) {
+  return a - b;
+};
 
-const multiply = function () {};
+const sum = function (arr) {
+  return arr.reduce((acc, item) => acc + item, 0);
+};
 
-const power = function () {};
+const multiply = function (nums) {
+  return nums.reduce((acc, item) => (acc *= item), 1);
+};
 
-const factorial = function () {};
+const power = function (a, b) {
+  return a ** b;
+};
 
-// Do not edit below this line
-module.exports = {
-  add,
-  subtract,
-  sum,
-  multiply,
-  power,
-  factorial,
+const factorial = function (a) {
+  let product = 1;
+  for (let i = 1; i <= a; i++) {
+    product *= i;
+  }
+  return product;
 };
