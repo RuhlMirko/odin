@@ -7,20 +7,30 @@ body {
 }
 
 #display {
-  text-align: center;
-  font-size: 4rem;
+  text-align: end;
+  font-size: 3rem;
+  background-color: #38352d;
 }
 
 #btns {
   display: flex;
+  justify-content: center;
+}
+
+#calc {
+  border: 4px solid #eec644;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  border-radius: 5px;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
   border: 3px solid #eec644;
   border-radius: 5px;
-  margin: 2% 35%;
+  margin: auto;
 }
 
 #numbers {
@@ -28,7 +38,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 4px;
-  margin: auto;
 }
 
 .row {
@@ -37,9 +46,24 @@ body {
   gap: 3px;
 }
 
+#operators {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 button {
   font-size: 3rem;
   background-color: #eec644;
   border-radius: 3px;
-  padding: 8px;
+  width: 60px;
+  height: 80px;
+  transition: 0.25s;
+}
+
+button:hover {
+  background-color: #ee9044;
+}
+button:focus {
+  transform: translatey(0.9);
 }

@@ -1,5 +1,8 @@
 "use strict";
-const diplay = "";
+const diplay = document.querySelector("#display");
+let value = 0;
+const numbers = document.querySelectorAll("#numbers button");
+console.log(numbers);
 
 const add = function (a, b) {
   return a + b;
@@ -28,3 +31,10 @@ const factorial = function (a) {
   }
   return product;
 };
+
+numbers.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    value += e.target.id;
+    diplay.textContent = value;
+  });
+});
